@@ -40,12 +40,7 @@ function PageTransitions() {
 
 PageTransitions();
 
-const phrases = [
-    "Brogrammer",
-    "Creative Technologist",
-    "Gamer",
-    "Dog Lover",
-  ];
+
   
   
   
