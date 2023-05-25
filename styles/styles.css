@@ -116,7 +116,7 @@ section {
   background-color: rgba(255, 192, 173, 0.3); /* Adjust the background color and transparency */
   color: var(--color-white);
   padding: 0.2em;
-  border-radius: 0.2em;
+  border-radius: 0.2rem;
 }
 
 .highlight {
@@ -184,7 +184,7 @@ section {
           clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
 }
 .header-content .left-header .image {
-  border-radius: var(--br-sm-2);
+  border-radius: 18%;
   height: 90%;
   width: 68%;
   margin-left: 4rem;
@@ -198,6 +198,7 @@ section {
      object-fit: cover;
   filter: grayscale(100%);
   transition: filter 0.4s ease-in-out;
+  border-radius: 18%;
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
@@ -466,9 +467,140 @@ section {
   color: var(--color-primary);
 }
 
+.port-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.portfolios .portfolio-item {
+  position: relative;
+  border-radius: 15px;
+}
+.portfolios img {
+  width: 100%;
+  height: 300%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.portfolios .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5 rem;
+}
+.portfolios .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  -moz-columns: var(--color-white);
+       columns: var(--color-white);
+  margin: 0 1rem;
+}
+.portfolios .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+.portfolios .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
+
 .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.experiences {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.experiences .experience {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.experiences .experience:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.experiences .experience:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.8);
+}
+.experiences .experience img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+.experiences .experience .experience-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-secondary);
+}
+.experiences .experience .experience-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0, 7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.experiences .experience .experience-text h4:hover {
+  color: var(--color-secondary);
+}
+.experiences .experience .experience-text p {
+  color: var(--color-grey-2);
+  line-height: 2rem;
+  padding-right: 1rem;
 }
 
 .btn-con {
