@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e872e161c8274944f53818cd87b9350addb29bf29e96a3d652b2496a55e7bf04
-size 1079
+# To better understand this file read this:
+# https://docs.ionos.space/docs/github-actions-customization/
+
+name: "Deploy Now: Execute Build"
+
+on:
+  workflow_call:
+    inputs:
+      site-url:
+        required: true
+        type: string
+      branch-id:
+        required: true
+        type: string
+
+env:
+  DEPLOYMENT_FOLDER: ./
+
+jobs:
+# Please do not rename this job
+  build-project:
+    name: build Hamsu-dev.github.io
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+
+# Please do not touch the following action
+      - name: Store deployment content
+        uses: ionos-deploy-now/artifact-action@v1
+        with:
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-us.ionos.space
+          project-id: 821d89dc-d3ac-4c53-a6d4-40d9774dc853
+          branch-id: ${{ inputs.branch-id }}
+          version: ${{ github.sha }}
+          folder: ${{ env.DEPLOYMENT_FOLDER }}
+          config-file: .deploy-now/Hamsu-dev.github.io/config.yaml
+          action: upload
