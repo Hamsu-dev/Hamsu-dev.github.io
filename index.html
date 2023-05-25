@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Lui</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        var i = 0;
+        setInterval(function () {
+            var titles = ["Kia ora!", "Hello!", "你好!"]; 
+            if (i === titles.length) {
+                i = 0;
+            }
+            document.title = titles[i];
+            i++;
+        }, 5000);
+    </script>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAlJIAAP///wAAhyIAz8/PAP/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVAABVAAAABQAiIgBQAABQQRERMwUABQMREREzMFBQMxEREzMzBVAxFEQTNEMFAzMRERMzMzADRBEREUQzMAMzMRERETMwAzMzERREQzBQNEMRERETBVAzMxEREREFBQMxEREREFAAUBERFEQFAAAFACIiAFAAAABVAABVAADwDwAA4AcAAMADAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAwAMAAOAHAADwDwAA" rel="icon" type="image/x-icon" />
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="./img/hero.png" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    <i class="fa-solid fa-kiwi-bird" style="color: #ffc0ad;"></i>
+                    <span>Sam Lui</span>
+                </h1>
+                <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Get to know me!</h4>
+                    <p>
+                        I have a keen passion for innovative solutions in software development, always looking for challenges to push myself further. I'm driven by curiosity and ambition, and I also value building lasting relationships and helping out others wherever I can. Away from the workstation, I love diving into classical music and having a good laugh with friends over sports or a hearty meal.
+                    </p>
+                    <div class="btn-con">
+                        <a href="" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">560+</p>
+                            <p class="small-text">Friends <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">560+</p>
+                            <p class="small-text">Friends <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">560+</p>
+                            <p class="small-text">Friends <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">560+</p>
+                            <p class="small-text">Friends <br /> Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">Courses</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog text"><i class="fa-solid fa-square-check"></i></p>
+                            <div class="progress">
+                                <span class="courses"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Data Structures & Algorithms</p>
+                        <div class="progress-con">
+                            <p class="prog text"><i class="fa-solid fa-square-check"></i></p>
+                            <div class="progress">
+                                <span class="courses"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Java OOP</p>
+                        <div class="progress-con">
+                            <p class="prog text"><i class="fa-solid fa-square-check"></i></p>
+                            <div class="progress">
+                                <span class="courses"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Web Applications</p>
+                        <div class="progress-con">
+                            <p class="prog text"><i class="fa-solid fa-square-check"></i></p>
+                            <div class="progress">
+                                <span class="courses"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Java</p>
+                        <div class="progress-con">
+                            <p class="prog text"><i class="fa-solid fa-square-check"></i></p>
+                            <div class="progress">
+                                <span class="courses"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">C Programming</p>
+                        <div class="progress-con">
+                            <p class="prog text"><i class="fa-solid fa-square-check"></i></p>
+                            <div class="progress">
+                                <span class="courses"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase" style="color: #9644a1;"></i>
+                    </div>
+                    <p class="tl-duration">September 2023 - December 2023</p>
+                    <h5>Webzilla<span> - Frontend Developer</span></h5>
+                    <P>
+
+                    </P>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase" style="color: #9644a1;"></i>
+                    </div>
+                    <p class="tl-duration">Jun 2020 - Apr 2021</p>
+                    <h5>Needo<span> - Cook/Front of house</span></h5>
+                    <P>
+
+                    </P>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase" style="color: #9644a1;"></i>
+                    </div>
+                    <p class="tl-duration">Mar 2022 – Present</p>
+                    <h5>The Labour Exchange<span> - Head Of Operations</span></h5>
+                    <P>
+
+                    </P>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase" style="color: #9644a1;"></i>
+                    </div>
+                    <p class="tl-duration">2020 - present</p>
+                    <h5>Student<span> - The University Of Auckland</span></h5>
+                    <P>
+                        
+                    </P>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase" style="color: #9644a1;"></i>
+                    </div>
+                    <p class="tl-duration">Nov 2020 - Apr 2022</p>
+                    <h5>GION<span> - Chef</span></h5>
+                    <P>
+
+                    </P>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase" style="color: #9644a1;"></i>
+                    </div>
+                    <p class="tl-duration">Dec 2018 - Jan 2020</p>
+                    <h5>EVENT Cinemas<span> - Sales Attendant</span></h5>
+                    <P>
+
+                    </P>
+                </div>
+            </div>
+        </section>
+        <section class="section sec3 portfolio" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Resort.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Resort.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Resort.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Resort.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Resort.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Resort.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section sec4 experience" id="experience"></section>
+        <section class="section sec5 contact" id="contact"></section>
+    </main>
+
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control control-4" data-id="experience">
+            <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
