@@ -10,23 +10,14 @@
   --color-secondary: #72757e;
   --color-white: #fff3ec;
   --color-black: #140d0b;
-  /* Defining custom CSS variable for black color */
   --color-grey0: #f8f8f8;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-1: #dbe1e8;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-2: #b2becd;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-3: #6c7983;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-4: #454e56;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-5: #2a2e35;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-6: #12181b;
-  /* Defining custom CSS variable for grey shade */
   --br-sm-2: 14px;
-  /* Defining custom CSS variable for border radius */
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -48,15 +39,10 @@
 
 body {
   background-color: var(--color-primary);
-  /* Setting background color using custom CSS variable */
   font-family: "Poppins", sans-serif;
-  /* Setting font family with fallback to generic sans-serif */
   font-size: 1.1rem;
-  /* Setting font size */
   color: var(--color-white);
-  /* Setting text color using custom CSS variable */
   transition: all 0.4s ease-in-out;
-  /* Applying transition effect to all properties */
 }
 
 .header {
@@ -284,6 +270,9 @@ section {
   font-weight: 500;
   color: var(--color-grey-5);
 }
+.header-content .right-header h2 {
+  padding-bottom: 1rem;
+}
 
 .about-container {
   display: grid;
@@ -367,9 +356,7 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
-}
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
-  color: var(--color-grey-2);
+  color: rgb(149, 62, 158);
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
@@ -383,7 +370,7 @@ section {
   left: 0;
   top: 0;
   height: 100%;
-  background-color: var(--color-secondary);
+  background: -webkit-linear-gradient(45deg, rgb(30, 28, 85), rgb(245, 119, 46), rgb(254, 166, 66));
   transition: all 0.4s ease-in-out;
   width: 100%;
 }
@@ -734,7 +721,8 @@ section {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -753,11 +741,55 @@ section {
 .contact-content-con .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
-.contact-content-con .right-contact .submit-btn {
-  display: flex;
-  justify-content: flex-start;
+
+/* Button container */
+.sub-btn {
+  display: inline;
+  padding: 10px 20px;
+  background-color: var(--color-grey-5);
+  border: 2px solid rgb(0, 86, 83);
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s ease, transform 0.3s ease; /* Add transitions for smooth color change and transform */
+}
+.sub-btn .sub-icon {
+  font-size: 15px;
+  margin-left: 5px;
 }
 
+.sub-btn:hover {
+  color: var(--color-secondary); /* Change to the desired hover text color */
+  animation: hover-animation 0.5s infinite alternate; /* Add hover animation */
+}
+
+.sub-btn.clicked {
+  animation: click-animation 0.5s; /* Add click animation */
+}
+
+@keyframes hover-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .btn-con {
   display: flex;
   align-self: flex-start;
