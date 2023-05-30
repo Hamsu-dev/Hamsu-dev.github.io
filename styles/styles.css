@@ -1,21 +1,14 @@
 * {
   margin: 0;
-  /* Resetting margin */
   padding: 0;
-  /* Resetting padding */
   box-sizing: border-box;
-  /* Including padding and border in element's total width and height */
   list-style: none;
-  /* Removing default bullet points or numbering from lists */
 }
 
 :root {
-  --color-primary: #55423d;
-  /* Defining custom CSS variable for primary color */
-  --color-secondary: #ffc0ad;
-  /* Defining custom CSS variable for secondary color */
+  --color-primary: #16161a;
+  --color-secondary: #72757e;
   --color-white: #fff3ec;
-  /* Defining custom CSS variable for white color */
   --color-black: #140d0b;
   /* Defining custom CSS variable for black color */
   --color-grey0: #f8f8f8;
@@ -38,32 +31,19 @@
 }
 
 .light-mode {
-  --color-primary: #456789;
-  /* Defining custom CSS variable for primary color */
-  --color-secondary: #89abc2;
-  /* Defining custom CSS variable for secondary color */
+  --color-primary: #EAEAEA;
+  --color-secondary: #8D8D8D;
   --color-white: #ffffff;
-  /* Defining custom CSS variable for white color */
   --color-black: #000000;
-  /* Defining custom CSS variable for black color */
   --color-grey0: #f7f7f7;
-  /* Defining custom CSS variable for lightest grey shade */
   --color-grey-1: #dcdcdc;
-  /* Defining custom CSS variable for light grey shade */
   --color-grey-2: #c0c0c0;
-  /* Defining custom CSS variable for grey shade */
   --color-grey-3: #a9a9a9;
-  /* Defining custom CSS variable for medium grey shade */
   --color-grey-4: #808080;
-  /* Defining custom CSS variable for dark grey shade */
   --color-grey-5: #696969;
-  /* Defining custom CSS variable for darker grey shade */
   --color-grey-6: #505050;
-  /* Defining custom CSS variable for darkest grey shade */
   --br-sm-2: 14px;
-  /* Retaining your custom CSS variable for border radius */
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
-  /* Lightening your custom CSS variable for box shadow */
 }
 
 body {
@@ -83,10 +63,7 @@ body {
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
-  background-image: url("/img/paper-cut-illustration-sky-with-clouds-bird-flying-sky.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--color-primary);
 }
 
 a {
@@ -128,53 +105,30 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-image: url("/img/Clean Background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--color-primary);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-image: url("/img/Clean Background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--color-primary);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-image: url("/img/colorful-sky-with-clouds-words-cloud-it.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--color-primary);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-image: url("/img/Clean Background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--color-primary);
 }
 
 .active {
   display: block;
-  -webkit-animation: softFadeIn 1s ease-in-out forwards;
-          animation: softFadeIn 1s ease-in-out forwards;
-}
-@-webkit-keyframes softFadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation: softFadeIn 1s ease-in-out forwards;
 }
 @keyframes softFadeIn {
   0% {
@@ -811,7 +765,7 @@ section {
 
 .main-btn {
   border-radius: 30px;
-  color: inherit;
+  color: #7f5af0;
   font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
@@ -902,9 +856,6 @@ section {
   .timeline {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
-  }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
   }
   .portfolios {
     grid-template-columns: 1fr;
@@ -1027,6 +978,17 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 0.6rem 1rem;
+    margin: 0.6rem 1rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .main-title h2 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=styles.css.map */
