@@ -23,25 +23,25 @@
 
 .light-mode {
   --color-primary: #EAEAEA;
-  --color-secondary: #8D8D8D;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-grey0: #f7f7f7;
-  --color-grey-1: #dcdcdc;
-  --color-grey-2: #c0c0c0;
-  --color-grey-3: #a9a9a9;
-  --color-grey-4: #808080;
-  --color-grey-5: #696969;
-  --color-grey-6: #505050;
+  --color-secondary: #16161a;
+  --color-white: #fff3ec;
+  --color-black: #140d0b;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  color: var(--color-white);
+  color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
 
@@ -50,9 +50,6 @@ body {
   color: var(--color-white);
   overflow: hidden;
   background-color: var(--color-primary);
-  // @media screen and (max-width:610px) {
-  //   min-height: 100vh;
-  // }
 }
 
 a {
@@ -146,7 +143,7 @@ section {
       173,
       0.3);
   /* Adjust the background color and transparency */
-  color: var(--color-white);
+  color: var(--color-secondary);
   padding: 0.2em;
   border-radius: 0.2rem;
 }
@@ -253,7 +250,6 @@ section {
       height: 90%;
       width: 68%;
       margin-left: 4rem;
-      background-color: var(--color-black);
       transition: all 0.4s ease-in-out;
 
       img {
@@ -303,6 +299,7 @@ section {
 
     h2 {
       padding-bottom: 1rem;
+      color: var(--color-secondary);
     }
   }
 }
@@ -348,7 +345,6 @@ section {
           position: relative;
           text-transform: uppercase;
           font-size: 1.2rem;
-          color: var(--color-grey-1);
           letter-spacing: 2px;
 
           &::before {
@@ -371,7 +367,7 @@ section {
     p {
       line-height: 2rem;
       padding: 1rem;
-      color: var(--color-grey-1);
+      color: var(--color-secondary);
     }
 
     h4 {
@@ -444,65 +440,6 @@ section {
   }
 }
 
-//Timeline
-
-.timeline {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  padding-bottom: 3rem;
-
-  .timeline-item {
-    position: relative;
-    padding-left: 3rem;
-    border-left: 1px solid var(--color-grey-5);
-
-    .tl-icon {
-      position: absolute;
-      left: -27px;
-      top: 0;
-      background-color: var(--color-secondary);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      i {
-        font-size: 1.3rem;
-      }
-    }
-
-    .tl-duration {
-      padding: 0.2rem 0.6rem;
-      background-color: var(--color-grey-5);
-      border-radius: 15px;
-      display: inline-block;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    h5 {
-      padding: 1rem 0;
-      text-transform: uppercase;
-      font-size: 1.3rem;
-      font-weight: 600;
-
-      span {
-        color: var(--color-grey-2);
-        font-weight: 500;
-        font-size: 1.2rem;
-      }
-    }
-
-    p {
-      color: var(--color-grey-2);
-    }
-  }
-}
-
 //Portfolios
 .port-text {
   padding: 2rem 0;
@@ -518,6 +455,7 @@ section {
   .portfolio-item {
     position: relative;
     border-radius: 15px;
+    border: 2px solid rgb(0, 86, 83);
   }
 
   img {
@@ -689,6 +627,7 @@ section {
     border-radius: 5px;
     box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.1);
     transition: all .4s ease-in-out;
+    border: 8px solid var(--color-grey-5);
 
     &:hover {
       box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.3);
@@ -720,6 +659,7 @@ section {
         font-size: 1.5rem;
         margin-bottom: 0, 7rem;
         transition: all .4s ease-in-out;
+        color: rgb(149, 62, 158);
         cursor: pointer;
 
         &:hover {
